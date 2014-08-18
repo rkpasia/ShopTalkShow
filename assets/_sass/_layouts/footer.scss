@@ -1,0 +1,90 @@
+body > footer{
+  background: url('../img/shoptalk_blackbg.jpg') center center repeat;
+  padding: 40px 0;
+
+  .footer-content {
+    @include container(100%);
+    max-width:1080px;
+    color:white;
+
+    .footer-about{
+      @include span(6);
+    }
+
+    .footer-links{
+      @include span(4 last);
+
+      ul{
+        margin-top:20px;
+      }
+
+      ul li{
+        padding:20px 0;
+        border-bottom:1px solid #666;
+        text-transform:uppercase;
+      }
+      ul li:first-of-type{
+        border-top: 1px solid #666;
+      }
+    }
+
+    h3{
+      font-size: 3em;
+      text-transform: uppercase;
+    }
+
+    h5{
+      font-size:1.5em;
+      text-transform: uppercase;
+      line-height:50px;
+    }
+
+    a{
+      text-decoration:none;
+      color:#f96c06;
+      font-weight:bold;
+
+      &:hover{
+        color: #C75605;
+        text-decoration: underline;
+      }
+    }
+
+    .hosts{
+      margin-top:20px;
+    }
+
+    .hosts div{
+      @include span(no-gutter 6);
+    }
+
+    img{
+      width:50px;
+      float:left;
+      vertical-align:middle;
+      margin-right:15px;
+    }
+
+    p{
+      clear:both;
+      margin-top:15px;
+      line-height:1.3em;
+
+      svg{
+        width:15px;
+        height:15px;
+        fill:white;
+      }
+    }
+  }
+
+  .copyright{
+    margin-top:40px;
+    @include container(100%);
+    max-width:1080px;
+    p{
+      @include span(12);
+    }
+    color:white;
+  }
+}

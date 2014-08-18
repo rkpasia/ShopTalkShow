@@ -1,0 +1,38 @@
+{% include head.html %}
+
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% include svg-dist.svg %}
+
+    {% include navigation.html %}
+
+    {% include header.html %}
+
+    <main>
+        <article id="content">
+            <header class="post-header">
+                <img src="#" alt="Episode img">
+                <h1>{{ page.title }}</h1>
+                <p class="meta">
+                    <time>Agosto 4th 2014</time>
+                    <span>01:03:42</span>
+                </p>
+            </header>
+            {{ content }}
+        </article>
+        <aside class="sidebar">
+            <h3>Next Episode</h3>
+            <h3>Previous Episode</h3>
+        </aside>
+    </main>
+
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+    {% include googleanalytics.html %}
+
+  </body>
+</html>

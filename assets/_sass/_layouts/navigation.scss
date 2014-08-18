@@ -1,0 +1,57 @@
+// NAVIGATION STYLES
+
+body > nav {
+  height:46px;
+  background: url('../img/texture_orange.png') center center repeat;
+
+  ul{
+    margin:0;
+    padding:0;
+    @include container(100%);
+    max-width:1080px;
+    line-height:46px;
+
+    li{
+      @include span(2);
+      list-style-type: none;
+      text-align:center;
+
+      font-size:13px;
+      font-weight:bold;
+      color:white;
+      text-transform:uppercase;
+
+      &:last-of-type{
+        @include span(last 4);
+      }
+
+
+      a{
+
+        text-decoration: none;
+        color: white;
+        font-size:0.9em;
+        @include transition-property(color);
+        @include transition-duration(.5s);
+
+        svg{
+          fill:white;
+          width:20px;
+          height:20px;
+          margin-right: 5px;
+          vertical-align: text-bottom;
+          @include transition-property(fill);
+          @include transition-duration(.5s);
+        }
+
+        &:hover{
+          color:#000;
+        }
+
+        &:hover svg{
+          fill:#000;
+        }
+      }
+    }
+  }
+}

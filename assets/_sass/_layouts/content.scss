@@ -1,0 +1,95 @@
+main{
+  @include container(100%);
+  max-width:1080px;
+  padding:30px 0px;
+}
+
+.archive {
+
+  @include span(6);
+
+  h1 {
+    font-size:3em;
+    text-transform: uppercase;
+    border-bottom:1px solid #c0c0c0;
+    padding-bottom:10px;
+  }
+
+  .post {
+    padding:30px 0px;
+    border-bottom:1px solid #c0c0c0;
+    @include clearfix();
+  }
+
+  .post img {
+    float:left;
+    width: span(2.3);
+    margin-right:20px;
+  }
+
+  .post h2{
+    font-size:2.5em;
+    text-transform: uppercase;
+  }
+
+  .post .meta{
+    margin-top:15px;
+    color:#999;
+  }
+
+  .page-nav {
+    padding:15px 0px;
+    border-bottom:1px solid #c0c0c0;
+    @include clearfix();
+  }
+
+  .page-nav .prev, .page-nav .next{
+    color:#f96c06;
+    font-weight:bold;
+    text-decoration:none;
+    &:hover {
+      text-decoration:underline;
+      color:#C75605;
+    }
+  }
+
+  .page-nav .prev{
+    float:left;
+  }
+  .page-nav .next{
+    float:right;
+  }
+
+}
+
+.sidebar{
+  @include span(4 last);
+
+  a{
+    color:#f96c06;
+    font-weight:bold;
+    text-decoration:none;
+    &:hover {
+      text-decoration:underline;
+      color:#C75605;
+    }
+  }
+
+  h3{
+    font-size:2em;
+    text-transform:uppercase;
+  }
+
+  ul{
+    margin-top:15px;
+  }
+
+  ul li{
+    padding:20px 0;
+    border-bottom:1px solid #c0c0c0;
+    text-transform:uppercase;
+  }
+  ul li:first-of-type{
+    border-top: 1px solid #c0c0c0;
+  }
+}

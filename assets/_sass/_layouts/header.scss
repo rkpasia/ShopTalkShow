@@ -1,0 +1,58 @@
+body > header{
+  background: url('../img/shoptalk_blackbg.jpg') center center repeat;
+  background-size: 495px 495px;
+  padding: 5em 0;
+
+  .header-container{
+    @include container(100%);
+    max-width:1080px;
+
+
+    .logo{
+      @include span(6);
+    }
+
+    .next-episode{
+      @include span(6);
+
+      p{
+        text-transform:uppercase;
+        color:white;
+        font-size:1.15em;
+        margin: 0 0 1em 0;
+      }
+      p+p{
+        font-size:4em;
+        margin-bottom:0.3em;
+        padding-bottom:0.25em;
+        border-bottom:1px solid #666;
+      }
+
+      .time-zone li{
+        color: shade(tint(#f96c06,90),60);
+        text-transform:uppercase;
+        list-style-type:none;
+        @include span(3 no-gutter);
+        @include transition-property(color);
+        @include transition-duration(.5s);
+      }
+
+      .time-zone svg{
+        fill: shade(tint(#f96c06,90),60);
+        width:25px;
+        height:25px;
+        vertical-align:text-bottom;
+        margin-right:5px;
+        @include transition-property(fill);
+        @include transition-duration(.5s);
+      }
+    }
+  }
+
+  &:hover .header-container .next-episode .time-zone li{
+    color: #f96c06;
+  }
+  &:hover .header-container .next-episode .time-zone svg{
+    fill: #f96c06;
+  }
+}

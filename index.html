@@ -1,0 +1,37 @@
+---
+layout: default
+title: 'ShopTalk: A Web Design and Development Podcast with Chris Coyier and Dave Rupert'
+---
+
+<main>
+  <div class="archive">
+    <h1>The archive</h1>
+
+
+    {% for post in paginator.posts %}
+      <section class="post">
+        <img src="http://stscdn.paravel.netdna-cdn.com/wp-content/uploads/2014/07/tobias-thumb-125x125.jpg" alt="">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="meta"><span>ICON</span><time datetime="" pubdate>{{ post.date }}</time></p>
+      </section>
+    {% endfor %}
+
+
+    <div class="page-nav"><!-- Navigation -->
+      <a href="#" class="prev">← Newer</a>
+      <a href="#" class="next">Older →</a>
+    </div>
+  </div>
+  <aside class="sidebar">
+    <div><!--ADVERTISE --></div>
+    <div>
+      <h3>Just Show me</h3>
+      <ul>
+        <li><a href="#">Specials</a></li>
+        <li><a href="#">Rapidfires</a></li>
+        <li><a href="#">Crossovers</a></li>
+        <li><a href="#">All episodes</a></li>
+      </ul>
+    </div>
+  </aside>
+</main>

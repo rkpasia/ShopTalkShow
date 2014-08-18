@@ -1,0 +1,11 @@
+# Jekyll
+_site
+
+# sass
+.sass-cache
+
+# System
+.DS_Store
+
+# NPM
+node_modules
