@@ -1,0 +1,1 @@
+# A jekyll template for the podcast ShopTalkShow
