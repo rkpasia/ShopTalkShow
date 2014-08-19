@@ -6,10 +6,45 @@
     border-top: 1px solid #c0c0c0;
     border-bottom: 1px solid #c0c0c0;
     padding:25px 0;
+    @include clearfix();
 
     img{
       float:left;
       margin-right:25px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  ul, p{
+    margin-top: 30px;
+  }
+  
+  ul {
+    list-style: disc;
+  }
+  
+  ul ul {
+    list-style: circle;
+    margin-bottom: 30px;
+  }
+    
+  ul > li {
+    line-height: 22px;
+  }
+
+  ul li {
+    margin-left: 30px;
+  }
+  
+  a {
+    color: #f96c06;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover{
+      color: #C75605;
+      text-decoration: underline;
     }
   }
 }

@@ -10,6 +10,7 @@ body > header{
 
     .logo{
       @include span(6);
+      text-align: center;
     }
 
     .next-episode{

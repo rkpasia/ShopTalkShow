@@ -16,7 +16,7 @@
                 <img src="#" alt="Episode img">
                 <h1>{{ page.title }}</h1>
                 <p class="meta">
-                    <time>Agosto 4th 2014</time>
+                    <time>{{ page.date | date_to_string }}</time>
                     <span>01:03:42</span>
                 </p>
             </header>
@@ -24,7 +24,9 @@
         </article>
         <aside class="sidebar">
             <h3>Next Episode</h3>
+            <a href="{{ page.next.url }}">{{ page.title }}</a>
             <h3>Previous Episode</h3>
+            <a href="{{ page.previous.url }}">{{ page.title }}</a>
         </aside>
     </main>
 

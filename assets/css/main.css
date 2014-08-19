@@ -131,6 +131,7 @@ body > header .header-container .logo {
   float: left;
   padding-left: 1.38889%;
   padding-right: 1.38889%;
+  text-align: center;
 }
 body > header .header-container .next-episode {
   width: 50%;
@@ -394,8 +395,37 @@ main:after {
   border-top: 1px solid #c0c0c0;
   border-bottom: 1px solid #c0c0c0;
   padding: 25px 0;
+  overflow: hidden;
+  *zoom: 1;
 }
 #content .post-header img {
   float: left;
   margin-right: 25px;
+  width: 100px;
+  height: 100px;
+}
+#content ul, #content p {
+  margin-top: 30px;
+}
+#content ul {
+  list-style: disc;
+}
+#content ul ul {
+  list-style: circle;
+  margin-bottom: 30px;
+}
+#content ul > li {
+  line-height: 22px;
+}
+#content ul li {
+  margin-left: 30px;
+}
+#content a {
+  color: #f96c06;
+  text-decoration: none;
+  font-weight: bold;
+}
+#content a:hover {
+  color: #C75605;
+  text-decoration: underline;
 }
